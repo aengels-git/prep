@@ -1,4 +1,5 @@
 import numpy as np
+from functools import reduce
 def expand_grid(*args):
     """
     Based on an arbirtary number of lists or numpy arrays 
