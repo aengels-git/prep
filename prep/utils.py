@@ -1,6 +1,8 @@
 from typing import Union
+
 import pandas as pd
 import polars as pl
+
 def prep_info(
         df:Union[pl.DataFrame, pd.DataFrame], 
         id:Union[str, list] = ["PERS_PERSON_RSK"], 
@@ -29,3 +31,4 @@ def prep_info(
     else:
         for key, value in result.items():
             print(f"{key}: {value}")
+
